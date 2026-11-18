@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Cloned external repository (nested git repo)
+PromKappa-2.0-makes-Objective-Digital-Stains/
+
+# Generated plot outputs
+output/
+
+# Large FASTA datasets (optional to keep git repo light)
+*.fa
+*.fasta
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini

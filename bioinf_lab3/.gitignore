@@ -1,0 +1,88 @@
+# =====================================================================
+# Byte-compiled / optimized / DLL files
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =====================================================================
+# Virtual Environments
+# =====================================================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# =====================================================================
+# IDEs and Editors
+# =====================================================================
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Editor temporary/swap files
+*.swp
+*.swo
+*~
+
+# =====================================================================
+# Distribution / Packaging
+# =====================================================================
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =====================================================================
+# Testing, Type Checking, and Linting
+# =====================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# =====================================================================
+# Environment Variables & Local Secrets
+# =====================================================================
+.env
+.env.local
+.env.*.local
+
+# =====================================================================
+# Operating System Files
+# =====================================================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =====================================================================
+# Optional: Generated Data & Output Files
+# (Uncomment the lines below if you do not wish to track generated outputs)
+# =====================================================================
+# *.xlsx
+# *.png

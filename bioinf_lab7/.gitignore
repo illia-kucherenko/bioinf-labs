@@ -1,0 +1,83 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# PyCharm / JetBrains IDE
+.idea/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Unit test, coverage & type checking caches
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables & local configuration
+.env
+.env.*
+!.env.example
+
+# OS generated files (Windows / macOS / Linux)
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files & logs
+*.log
+*.tmp
+*.bak
+
+# Optional: Generated electrophoresis gel plots (uncomment if you prefer not to track generated figures)
+# gel_*.png

@@ -1,0 +1,74 @@
+{
+  "accession": "NC_001422.1",
+  "reference_header": ">NC_001422.1 Escherichia phage phiX174, complete genome",
+  "genome_length": 5386,
+  "sampling_stats": {
+    "n_samples": 2000,
+    "min_len": 100,
+    "max_len": 120,
+    "total_sampled_bp": 220011,
+    "genome_length": 5386,
+    "mean_coverage_depth": 40.85,
+    "min_coverage_depth": 0,
+    "max_coverage_depth": 57,
+    "zero_coverage_bases": 6,
+    "zero_coverage_pct": 0.1114,
+    "lander_waterman_expected_zero": 0.0
+  },
+  "assembly_stats": {
+    "initial_reads": 2000,
+    "unique_non_contained": 784,
+    "merges_performed": 783,
+    "final_contigs_count": 1,
+    "max_contig_length": 5380,
+    "min_contig_length": 5380,
+    "contig_lengths": [
+      5380
+    ],
+    "assembly_time_seconds": 0.33,
+    "min_overlap_threshold": 30,
+    "ambiguous_tie_merges": 0
+  },
+  "de_bruijn_analysis": {
+    "k": 31,
+    "total_nodes": 5351,
+    "total_edges": 5350,
+    "branching_fork_nodes": 0,
+    "branching_join_nodes": 0,
+    "complex_nodes": 0,
+    "is_eulerian_linear": true
+  },
+  "evaluation": {
+    "reference_length": 5386,
+    "num_contigs": 1,
+    "total_assembled_length": 5380,
+    "longest_contig_length": 5380,
+    "n50": 5380,
+    "genome_coverage_fraction": 99.89,
+    "is_exact_match": true,
+    "match_position_in_reference": 4,
+    "reverse_match": false,
+    "problems_diagnosed": [
+      {
+        "problem": "Repetitive Sequences (The Assembly Bottleneck)",
+        "impact": "When identical repeats are longer than the overlap cutoff, the algorithm cannot determine the correct linear order of reads flanking the repeat. Greedy assemblers will either collapse the repeated copies into a single instance or create false chimeric joins.",
+        "severity": "CRITICAL"
+      },
+      {
+        "problem": "Coverage Gaps (Lander-Waterman Dropout)",
+        "impact": "Random sampling leaves regions with zero reads (or insufficient overlap < K). Even with 2,000 reads, any gap breaks the assembly into 1 separate disconnected contigs rather than a single chromosome.",
+        "severity": "LOW"
+      },
+      {
+        "problem": "Computational Complexity (NP-Hard Shortest Superstring)",
+        "impact": "Reconstructing the minimal sequence that contains all reads is the NP-hard Shortest Superstring Problem. Finding all pairwise overlaps naively requires O(N^2 * L) comparisons. Greedy heuristics get trapped in local optima and cannot backtrack.",
+        "severity": "HIGH"
+      },
+      {
+        "problem": "Circularity and Boundary Overhangs",
+        "impact": "Viral genomes (like PhiX174) are circular molecules. Linear shotgun reads that span the origin (0 / 5,386 bp) cannot be linearly assembled unless the assembler handles circular boundary conditions, leaving terminal overhangs.",
+        "severity": "MEDIUM"
+      }
+    ]
+  }
+}
